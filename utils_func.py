@@ -18,7 +18,7 @@ TOP_Ks = [20, 50, 100]
 def parse_args(parser):
     parser.add_argument('--dataset', default='ml-1M', type=str, help='dataset')
     parser.add_argument('--base', default='mf', type=str, help='base model')
-    parser.add_argument('--unlearn', default='none', type=str, help='unlearning model: none; retrain; recul, receraser')
+    parser.add_argument('--unlearn', default='recul', type=str, help='unlearning model: none; retrain; recul, receraser')
     parser.add_argument('--tst_mth', default='intr', type=str, help='test model: ori, user, item, intr')
     parser.add_argument('--alpha', default=2, type=float, help='coefficient of Loss_2 (suggest 3 for MF and 1 for LG)')
     parser.add_argument('--beta', default=4, type=float, help='coefficient of phantom loss')
